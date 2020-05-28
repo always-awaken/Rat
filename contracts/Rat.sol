@@ -353,11 +353,11 @@ contract Pausable is Ownable{
 
 contract RatToken is ERC20, Ownable, Pausable{
 
-    string public constant name = "RAT Token";
+    string public constant name = "Red Angel Token";
     string public constant symbol = "RAT";
     uint8 public constant decimals = 18;
     uint constant private E18 = 1000000000000000000;
-    // Total  250,000,000
+    // Total  100,000,000
     uint constant public maxTotalSupply = 100000000 * E18;
     bool public isInitialized = false;
     event ClaimedTokens(address indexed owner, address indexed _token, uint256 giveBackBalance);
